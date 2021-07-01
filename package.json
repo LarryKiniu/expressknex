@@ -1,0 +1,14 @@
+{
+  "name": "expressknex",
+  "version": "1.0.0",
+  "description": "A project to demonstrate how to connect html to express and use knex for database migration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Larry Kiniu",
+  "repository": {
+    "url": "https://github.com/LarryKiniu/expressknex"
+  },
+  "license": "ISC"
+}
