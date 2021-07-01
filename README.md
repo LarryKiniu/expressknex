@@ -18,6 +18,25 @@ To use Knex - you need a `knexfile.js`in the root of your project
 # Run the app
 To run the app, run `node index.js` on your terminal/cmd
 
+# Project structure
+The project folder structure is as follows:  
+- migrations  
+    |_________database migrations files created by running `knex migrate:make <your_table_name>`  
+- node_modules  
+    |_________dependencies installed by running `npm install` (it's ignored by git since it is in `.ignore` file)  
+- public  
+    |_________all your static files (html, css. javascript, images)
+- .gitignore  
+    |_________file to indicate which files and folder git should ignore - you generally want to ignore your dependencies as you can always install them using `npm install`  
+- index.js  
+    |_________your app entrance file  
+- knexfile.js  
+    |_________knex configuration file where you indicate your database (mysql etc), connection details (host, user, password, database)  
+- package.json  
+    |________file to configure your app (name, version, description, dependencies)  
+- README.md  
+    |________file to describe what the app is for and how to install and run the app
+
 # Learn
 Follow the comments on the code to know how to connect express to frontend html and javascript
 
