@@ -4,11 +4,19 @@
   "description": "A project to demonstrate how to connect html to express and use knex for database migration",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "knex migrate:latest"
   },
   "author": "Larry Kiniu",
   "repository": {
     "url": "https://github.com/LarryKiniu/expressknex"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5"
+  }
 }
