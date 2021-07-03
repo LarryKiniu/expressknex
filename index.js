@@ -4,6 +4,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // Let's import the multer package to help us with file uploads
 const multer = require('multer');
+// Let's import a library to allow cross-origin resource sharing
+const cors = require('cors');
 const upload = multer();
 // Initialize our shiny new http server
 const app = express();
@@ -14,6 +16,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 // for parsing multipart/form-data
 app.use(upload.array()); 
+// for cors
+app.use(cors());
 // Initialize our port variable.
 // Our http server will now be accessible on the browser via http://localhost:3000
 // If we wanted our server to be available via http://localhost - we would change the port to 80
